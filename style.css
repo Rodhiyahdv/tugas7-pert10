@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    font-size: 12pt;
+    background-color: cadetblue;
+}
+
+input {
+    width: 25%;
+    height: 30px;
+    font-family: monospace;
+}
+
+button {
+    background-color: slateblue;
+    height: 30px;
+    color: white;
+    border: none;
+    font-family: monospace;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu li {
+    display: inline;
+    background-color: mediumslateblue;
+    justify-content: center;
+    padding: 10px;
+}
+
+.menu li.active {
+    background-color: silver;
+}
+
+.container {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+@media screen  and (max-width: 670px) and (min-width: 100px) {
+    body {
+        font-size: 10pt;
+    }
+    .menu li {
+        display: inline-block;
+    }
+}
